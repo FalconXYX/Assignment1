@@ -5,7 +5,8 @@ public class PizzaScanner {
     public static void main(String[] args) {
         final double LCOST = 7;
         final double UCOST = 7;
-        double tcost, bcost
+        double tcost, bcost;
+        
         
         
     
