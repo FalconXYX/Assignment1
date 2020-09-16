@@ -27,20 +27,20 @@ public class BarGraph {
         p.down();
         p.move(-300, -250);
         p.move(550, -250);
-        makebar(Color red,v1, -200,-250);
-        makebar(Color red,v1, -100,-250);
-        makebar(Color red,v1, 0,-250);
-        makebar(Color red,v1, 100,-250);
+        makebar(Color.red,v1, -200,-250);
+        makebar(Color.red,v2, -100,-250);
+        makebar(Color.red,v3, 0,-250);
+        makebar(Color.red,v4, 100,-250);
         
         
     }
 
-    public static void makebar(Color col, int l, int y, int x) {
+    public static void makebar(Color col, int l, int x, int y) {
         p.setWidth(8);
         p.up();
-        p.move(x, y);
+        p.move(x, y+8);
         p.down();
-        p.setColor(Color.col);
+        p.setColor(col);
         p.setDirection(90);
         p.move(l);
         p.up();
