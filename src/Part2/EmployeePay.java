@@ -11,15 +11,17 @@ public class EmployeePay {
 
         double hours, tpay, rpay, opay;
         for (int i = 1; i < 6; i++) {
-            
+            while(true){
                 hours = tpay = rpay = opay=0;
                 System.out.print(String.format("Enter Hours for Employee %d: ", i));
                 hours = s.nextInt();
                 if (hours > 0 && hours <= 70) {
-                    System.out.print("");
+                    break;
+                    
+                    
                     
                 }
-                else{return;}
+                else{System.out.println("Error Enter Number between 1-70");}}
                 if (hours > 40) {
                     rpay=  40*RATE;
                     hours-=40;
